@@ -24,7 +24,7 @@ export default defineComponent({
             }
         })
         return () =>
-            <div style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <div style={{ minHeight: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', width: '80vw' }}>
                 <ElUpload showFileList={false} onSuccess={onSuccess} action={`http://localhost:3000/upload`}>
                     {imageUrl.value ? <ElImage src={imageUrl.value}></ElImage> : <ElIcon><Plus /></ElIcon>}
                 </ElUpload>
